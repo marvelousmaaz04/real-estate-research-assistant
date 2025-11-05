@@ -85,7 +85,11 @@ def generate_answer(query):
         retriever=vector_store.as_retriever()
     )
 
+    # Don't use return_only_outputs=True
     result = chain.invoke({"question": query})
+
+    answer = result.get("answer", "I don't know.")
     sources = result.get("sources", "")
 
-    return result["answer"], sources
+    return answer, sources
+
