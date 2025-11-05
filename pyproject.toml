@@ -1,0 +1,20 @@
+[project]
+name = "real-estate-research-assistant"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "html2text>=2025.4.15",
+    "langchain>=1.0.3",
+    "langchain-chroma>=1.0.0",
+    "langchain-community>=0.4.1",
+    "langchain-groq>=1.0.0",
+    "langchain-huggingface>=1.0.1",
+    "protobuf>=6.33.0",
+    "python-dotenv>=1.2.1",
+    "sentence-transformers>=5.1.2",
+    "streamlit>=1.51.0",
+    "tiktoken>=0.12.0",
+    "unstructured>=0.18.15",
+]
